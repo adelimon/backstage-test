@@ -14,5 +14,7 @@ spec:
   lifecycle: production
   owner: PINTS
   system: percipio
-  dependsOn: []
+  dependsOn:
+    - contentdiscovery
+    - scheduler
   apisConsumedBy: []
