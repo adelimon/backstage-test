@@ -7,7 +7,8 @@ metadata:
     - node
     - microservice
   links: []
-  annotations: []
+  annotations:
+    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
   type: service
   lifecycle: production
