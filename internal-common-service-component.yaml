@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: internal-common-service
+  description: Internal Common Services
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations: []
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn: "[scheduler,content_discovery,org_api,mesg_relay]"
+  apisConsumedBy: []
