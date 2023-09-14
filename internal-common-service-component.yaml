@@ -8,13 +8,15 @@ metadata:
     - microservice
   links: []
   annotations:
-    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+    backstage.io/linguist: https://github.skillsoft.com/pints/internal-common-service.git
 spec:
   type: service
   lifecycle: production
   owner: PINTS
   system: percipio
   dependsOn:
-    - 'component:contentdiscovery'
-    - 'component:scheduler'
+    - component:scheduler
+    - component:content_discovery
+    - component:org_api
+    - component:mesg_relay
   apisConsumedBy: []
