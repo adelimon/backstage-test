@@ -14,5 +14,5 @@ spec:
   lifecycle: production
   owner: PINTS
   system: percipio
-  dependsOn: ['scheduler','content_discovery','org_api','mesg_relay']
+  # dependsOn: ['scheduler','content_discovery','org_api','mesg_relay']
   apisConsumedBy: []
