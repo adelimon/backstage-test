@@ -15,6 +15,6 @@ spec:
   owner: PINTS
   system: percipio
   dependsOn:
-    - contentdiscovery
-    - scheduler
+    - component:contentdiscovery
+    - component:scheduler
   apisConsumedBy: []
