@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: content-discovery-service
+  name: content-discovery
   description: Content Discovery Services
   tags:
     - node
@@ -15,7 +15,7 @@ spec:
   owner: PINTS
   system: percipio
   dependsOn:
-    - component:content-search-service
+    - component:content-search
     - component:ucs
     - component:academy
     - component:auth-config
@@ -31,7 +31,7 @@ spec:
     - component:aicc-launch-path
     - component:lti-launch
     - component:lti-launch-path
-    - component:edge-service
+    - component:edge
     - component:signed-life-time-in-seconds
     - component:pms
     - component:public-share-launch
