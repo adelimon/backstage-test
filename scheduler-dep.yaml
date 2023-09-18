@@ -1,0 +1,37 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: scheduler-service
+  description: Scheduler APIs and Scheduler Daemon
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations:
+    backstage.io/linguist: https://github.skillsoft.com/pints/scheduler-service.git
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn:
+    - component:reporting
+    - component:user
+    - component:content-aggregation
+    - component:content-discovery
+    - component:content-import
+    - component:content-integration
+    - component:notifications
+    - component:goals-streaks
+    - component:question-answers-service
+    - component:auth-config
+    - component:my-activity
+    - component:data-warehouse-elt
+    - component:ras-streams
+    - component:learner-tracking-kafka
+    - component:provider-discovery
+    - component:org-api
+    - component:content-aggregation-fbt
+    - component:assignment-service
+    - component:mesg-relay
+  apisConsumedBy: []

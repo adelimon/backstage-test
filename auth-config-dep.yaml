@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: auth-config
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations:
+    backstage.io/linguist: git@github.skillsoft.com:pints/auth-config.git
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn:
+    - component:org-api
+    - component:content-discovery
+    - component:ucs-api
+    - component:notification
+    - component:cerberus-soap
+    - component:oauth2-provider
+    - component:oauth2-provider-backend
+    - component:settings-service
+    - component:pms
+    - component:stripe
+    - component:mesg-relay
+    - component:scheduler
+    - component:workday-hr-wsdl
+  apisConsumedBy: []

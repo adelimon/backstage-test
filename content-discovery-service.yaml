@@ -15,25 +15,25 @@ spec:
   owner: PINTS
   system: percipio
   dependsOn:
-    - component:content_search_service
+    - component:content-search-service
     - component:ucs
     - component:academy
-    - component:auth_config
-    - component:org_api
+    - component:auth-config
+    - component:org-api
     - component:provisioning
     - component:scheduler
     - component:ics
-    - component:data_extract
-    - component:oauth2_provider
-    - component:mesg_relay
+    - component:data-extract
+    - component:oauth2-provider
+    - component:mesg-relay
     - component:share
-    - component:aicc_launch
-    - component:aicc_launch_path
-    - component:lti_launch
-    - component:lti_launch_path
-    - component:edge_service
-    - component:signed_life_time_in_seconds
+    - component:aicc-launch
+    - component:aicc-launch-path
+    - component:lti-launch
+    - component:lti-launch-path
+    - component:edge-service
+    - component:signed-life-time-in-seconds
     - component:pms
-    - component:public_share_launch
+    - component:public-share-launch
     - component:salesforce
   apisConsumedBy: []

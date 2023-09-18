@@ -16,7 +16,7 @@ spec:
   system: percipio
   dependsOn:
     - component:scheduler
-    - component:content-discovery-service
-    - component:org_api
-    - component:mesg_relay
+    - component:content-discovery
+    - component:org-api
+    - component:mesg-relay
   apisConsumedBy: []
