@@ -1,0 +1,39 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: content-discovery-service
+  description: Content Discovery Services
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations:
+    backstage.io/linguist: https://github.skillsoft.com/pints/content-discovery-service.git
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn:
+    - component:content_search_service
+    - component:ucs
+    - component:academy
+    - component:auth_config
+    - component:org_api
+    - component:provisioning
+    - component:scheduler
+    - component:ics
+    - component:data_extract
+    - component:oauth2_provider
+    - component:mesg_relay
+    - component:share
+    - component:aicc_launch
+    - component:aicc_launch_path
+    - component:lti_launch
+    - component:lti_launch_path
+    - component:edge_service
+    - component:signed_life_time_in_seconds
+    - component:pms
+    - component:public_share_launch
+    - component:salesforce
+  apisConsumedBy: []
