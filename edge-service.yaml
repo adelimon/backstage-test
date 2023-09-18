@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: edge-service
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations:
+    backstage.io/linguist: git@github.skillsoft.com:pints/edge-service.git
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn:
+    - component:reporting
+    - component:content-discovery
+    - component:user-management
+    - component:content-import
+    - component:q-signed-life-time-in-seconds
+  apisConsumedBy: []

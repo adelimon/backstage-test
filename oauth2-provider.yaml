@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: oauth2-provider
+  description: oauth2-provider
+  tags:
+    - node
+    - microservice
+  links: []
+  annotations:
+    backstage.io/linguist: git@github.skillsoft.com:pints/oauth2-provider.git
+spec:
+  type: service
+  lifecycle: production
+  owner: PINTS
+  system: percipio
+  dependsOn: []
+  apisConsumedBy: []
